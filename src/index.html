@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-[#272c39] flex flex-col gap-10 ">
+    <nav class="bg-blue-600 py-5 rounded-3xl">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-white font-bold text-xl">
+          <h1>Welcome to our website</h1>
+        </div>
+        
+        <!-- Menu Button for Mobile -->
+        <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+  
+        <!-- Navigation Links -->
+        <div id="menu" class="hidden lg:flex space-x-6 text-white">
+          
+          <a href="https://www.facebook.com/ffunbuzz" target="_blank" class="hover:underline">Facebook Page</a>
+          
+          <a href="https://wa.me/YOUR_NUMBER" target="_blank" class="hover:underline">WhatsApp</a>
+        </div>
+      </div>
+    </nav>
+  
+    <script>
+      // Toggle menu for mobile view
+      const menuBtn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu');
+  
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+    
+  <div class="md:flex pl-[50px] ">
+     <div class=" bg-neutral-700 h-[800px] w-[1800px] border border-cyan-400 shadow-[10px_10px_20px] shadow-cyan-500 rounded-2xl pl-10">
+      <div class="text-white  flex justify-between items-center md:flex">
+        <div><img class="h-[250px] w-[250px] rounded-full p-6 ml-[270px md:flex]" src="../images/talha icon .jpg" alt=""></div>
+        <div><p class="text-3xl p-4">ভেজালমুক্ত নিরাপদ খাবার আপনার কাছে পৌঁছে দেয়াই আমাদের লক্ষ্য </p>
+        <p class=" ml-[300px] text-3xl">Let us provide our service</p></div>
+      </div>
+      <div class="container mx-auto px-1 md:flex ">
+        <!-- Title -->
+        <h1 class="text-3xl font-bold text-center text-white mb-8">Product Gallery</h1>
+    
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Product Card -->
+          <div class="bg-white shadow rounded-lg overflow-hidden w-[300px]">
+            <img src="../images/pitha 1 n.jpg" alt="Product 1" class=" object-cover transform transition duration-300 hover:scale-[1.10]">
+            <div class="p-1">
+              <h2 class="text-lg font-bold text-gray-800">Product 1</h2>
+              <p class="text-gray-600">Price: 500 BDT</p>
+              <button class="mt-4 w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Order</button>
+            </div>
+          </div>
+    
+          <!-- Repeat Product Cards -->
+          <div class="bg-white shadow rounded-lg overflow-hidden w-[300px]">
+            <img src="../images/pitha 2n.jpg" alt="Product 2" class=" object-cover transform transition duration-300 hover:scale-[1.10] ">
+            <div class="p-4">
+              <h2 class="text-lg font-bold text-gray-800">Product 2</h2>
+              <p class="text-gray-600">Price: 400 BDT</p>
+              <button class="mt-4 w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Order</button>
+            </div>
+          </div>
+    
+          <div class="bg-white shadow rounded-lg overflow-hidden w-[300px]">
+            <img src="../images/3_n.jpg" alt="Product 3" class=" object-cover transform transition duration-300 hover:scale-[1.10]">
+            <div class="p-4">
+              <h2 class="text-lg font-bold text-gray-800">Product 3</h2>
+              <p class="text-gray-600">Price: 500 BDT</p>
+              <button class="mt-4 w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Order</button>
+            </div>
+          </div>
+    
+          <div class="bg-white shadow rounded-lg overflow-hidden w-[300px]">
+            <img src="../images/4.jpg" alt="Product 4" class="object-cover transform transition duration-300 hover:scale-[1.10]">
+            <div class="p-4">
+              <h2 class="text-lg font-bold text-gray-800">Product 4</h2>
+              <p class="text-gray-600">Price: 450 BDT</p>
+              <button class="mt-4 w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  </div>
+
+
+  </body>
+</html>
